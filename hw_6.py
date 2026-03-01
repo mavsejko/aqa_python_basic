@@ -208,7 +208,7 @@ elif 12 <= time <= 17:
     print("День")
 elif 18 <= time <= 21:
     print("Вечер")
-elif 22 <= time <= 5:
+elif 22 <= time or time <= 5:
     print("Ночь")
 else:
     print("Некорректное время")
@@ -250,7 +250,7 @@ elif temp > 25:
 """
 
 year = int(input("enter year "))
-if year % 4 == 0 and year % 100 != 100 or year % 400 == 0:
+if (year % 4 == 0 and year % 100 != 100) or (year % 400 == 0):
     print("Год високосный")
 else:
     print("Год не високосный")
@@ -348,6 +348,6 @@ print(result)
 """
 
 amount = int(input("Enter amount "))
-result = x * 0.9 if amounr > 5000 else x
+result = x * 0.9 if amount > 5000 else x
 print(result)
 
