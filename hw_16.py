@@ -27,7 +27,7 @@ for x in gen1:
 ===============================================
 """
 
-gen_2 = (random.randint(1, 101) for _ in range(10))
+gen_2 = (random.randint(1, 100) for _ in range(10))
 print(max(gen_2))
 
 """
@@ -263,4 +263,5 @@ products = [("Телефон", 500), ("Ноутбук", 1000), ("Планшет"
 
 products = [("Телефон", 500), ("Ноутбук", 1000), ("Планшет", 700)]
 ans_products = sorted(products, key=lambda x: x[1])
+
 print(ans_products)
