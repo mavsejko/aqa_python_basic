@@ -185,7 +185,7 @@ print(summarize(10, "abc", 5, 2))   # 17 (игнорируем "abc")
 
 
 def summarize(*args):
-    return sum([i for i in args if str(i).isdigit()])
+        return sum([i for i in args if isinstance(i, (int, float)) and not isinstance(i, bool)])
 
 
 print(summarize(1, 2, 3))           # 6
@@ -280,4 +280,5 @@ d1 = {"a": 1, "b": 2}
 d2 = {"b": 3, "c": 4}
 d3 = {"c": 5, "d": 6}
 print(merge_dicts(d1, d2, d3))
+
 
