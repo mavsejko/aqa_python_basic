@@ -172,9 +172,7 @@ print(lst_cities[-2::-2])
 ================================================
 """
 
-lst_cities[1] = "Сочи"
-print(lst_cities)
-lst_cities[2] = "Нижний Новгород"
+lst_cities[1:3] = "Сочи", "Нижний Новгород"
 print(lst_cities)
 lst_cities[1::2] = ["Город"]*len(lst_cities[1::2])
 print(lst_cities)
@@ -371,4 +369,5 @@ matrix[0][:] = [0]*len(matrix[0])
 print(matrix)
 matrix[1][-1] = "Python"
 print(matrix)
+
 
