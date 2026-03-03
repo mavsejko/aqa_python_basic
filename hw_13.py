@@ -45,10 +45,10 @@ Hello!
 
 
 def repeat(n):
-    def func(func):
+    def func(f):
         def wrapper():
             for _ in range(n):
-                func()
+                f()
 
         return wrapper
 
@@ -129,4 +129,5 @@ def slow_function():
 
 
 slow_function()  # Среднее время выполнения: 1.0002 сек
+
 
