@@ -223,4 +223,4 @@ print(a >= b)
 """
 print(ord('A'))
 print(ord('а'))
-print(ord('я'))
+print(ord('Я'))
