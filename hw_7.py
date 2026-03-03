@@ -123,7 +123,6 @@ print(sum_positive)
 a = int(input("Enter a"))
 b = int(input("Enter b"))
 
-result = 0
 while a <= b:
     if a % 2 == 0:
         a += 1
@@ -211,4 +210,5 @@ print(result_lst)
 A, B, K = int(input("A ")), int(input("B ")), int(input("K "))
 for i in range(A, B+1, K):
     print(i)
+
 
