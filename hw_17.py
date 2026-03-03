@@ -145,7 +145,7 @@ colors = ["red", "green", "blue", "yellow", "purple"]
 """
 
 colors = ["red", "green", "blue", "yellow", "purple"]
-print(random.choice(colors))
+print(f"Выбран цвет: {random.choice(colors)}")
 
 """
 10. Сгенерируй 10 случайных чисел от 0 до 100 и выведи их. Сделай так, чтобы результат был одинаковый при каждом запуске.
@@ -202,4 +202,5 @@ def area(length: float, width: float) -> float:
 
 
 print(area.__annotations__)
+
 
