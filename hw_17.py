@@ -153,7 +153,7 @@ print(f"Выбран цвет: {random.choice(colors)}")
 """
 
 random.seed(1)
-ans_10 = [random.randint(0, 101) for _ in range(10)]
+ans_10 = [random.randint(0, 100) for _ in range(10)]
 print(ans_10)
 
 """
